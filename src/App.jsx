@@ -1,8 +1,21 @@
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Marketplace from './pages/Marketplace';
+import Ranking from './pages/Ranking';
+import Wallet from './pages/Wallet';
+
 function App() {
   return (
-    <div className="text-3xl font-bold text-center text-purple-600 mt-10">
-      NFT Marketplace is coming!
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/ranking" element={<Ranking />} />
+        <Route path="/wallet" element={<Wallet />} />
+      </Routes>
+    </>
   );
 }
 
