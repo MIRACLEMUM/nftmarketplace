@@ -1,5 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import HeroSection from "./components/HeroSection";
+
+import TrandingSection from './components/TrandingSection';
+
+
+
 import Home from './pages/Home';
 import Marketplace from './pages/Marketplace';
 import Ranking from './pages/Ranking';
@@ -9,6 +15,11 @@ function App() {
   return (
     <>
       <Navbar />
+      <HeroSection />
+      <TrandingSection />
+
+
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/marketplace" element={<Marketplace />} />
