@@ -3,28 +3,28 @@ import TrandingNFTCard from './TrandingNFTCard';
 
 const collections = [
   {
-    mainImage: '/assets/Primary Photo Placeholder.png',
-    thumbnails: ['/assets/dog1.jpg', '/assets/dog2.jpg'],
+    mainImage: '/Primary Photo Placeholder.png',
+    thumbnails: ['/Secondary Photo Placeholder.png', '/Secondary Photo Placeholder (6).png'],
     count: 1025,
     title: 'DSGN Animals',
     creator: 'MrFox',
-    avatar: '/assets/avatar1.png',
+    avatar: '/Avatar (1).png',
   },
   {
-    mainImage: '/assets/mushroom-main.jpg',
-    thumbnails: ['/assets/mush1.jpg', '/assets/mush2.jpg'],
+    mainImage: '/Primary Photo Placeholder (2).png',
+    thumbnails: ['/Secondary Photo Placeholder (7).png', '/Secondary Photo Placeholder (8).png'],
     count: 1025,
     title: 'Magic Mushrooms',
     creator: 'Shroomie',
-    avatar: '/assets/avatar2.png',
+    avatar: '/Avatar (3).png',
   },
   {
-    mainImage: '/assets/robot-main.jpg',
-    thumbnails: ['/assets/robot1.jpg', '/assets/robot2.jpg'],
+    mainImage: '/Primary Photo Placeholder (1).png',
+    thumbnails: ['/Secondary Photo Placeholder (9) copy.png',  '/Secondary Photo Placeholder (11).png'],
     count: 1025,
     title: 'Disco Machines',
     creator: 'BeKind2Robots',
-    avatar: '/assets/avatar3.png',
+    avatar: '/Avatar (4).png',
   },
 ];
 
