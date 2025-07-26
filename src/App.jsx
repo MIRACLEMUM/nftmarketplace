@@ -3,6 +3,12 @@ import Navbar from './components/Navbar';
 import HeroSection from "./components/HeroSection";
 
 import TrandingSection from './components/TrandingSection';
+import TopCreatorSection from './components/TopCreatorSection';
+import BrowseCategories from "./components/BrowseCategories";
+import DiscoverNFTSection from "./components/DiscoverNFTSection"; // adjust the path if needed
+
+
+
 
 
 
@@ -17,6 +23,11 @@ function App() {
       <Navbar />
       <HeroSection />
       <TrandingSection />
+      <TopCreatorSection />
+      <BrowseCategories />
+      <DiscoverNFTSection />
+
+
 
 
 

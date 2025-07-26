@@ -20,7 +20,7 @@ const collections = [
   },
   {
     mainImage: '/Primary Photo Placeholder (1).png',
-    thumbnails: ['/Secondary Photo Placeholder (9) copy.png',  '/Secondary Photo Placeholder (11).png'],
+    thumbnails: ['/Secondary Photo Placeholder (9) copy.png', '/Secondary Photo Placeholder (11).png'],
     count: 1025,
     title: 'Disco Machines',
     creator: 'BeKind2Robots',
@@ -35,10 +35,30 @@ const TrandingSection = () => {
         <h2 className="text-3xl font-bold mb-2">Trending Collection</h2>
         <p className="text-gray-400 mb-10">Checkout Our Weekly Updated Trending Collection.</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {collections.map((item, idx) => (
-            <TrandingNFTCard key={idx} {...item} />
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {collections.map((item, idx) => {
+            if (idx === 0) return <TrandingNFTCard key={idx} {...item} />;
+
+            if (idx === 1)
+              return (
+                <div
+                  key={idx}
+                  className="hidden sm:block"
+                >
+                  <TrandingNFTCard {...item} />
+                </div>
+              );
+
+            if (idx === 2)
+              return (
+                <div
+                  key={idx}
+                  className="hidden md:block"
+                >
+                  <TrandingNFTCard {...item} />
+                </div>
+              );
+          })}
         </div>
       </div>
     </section>
